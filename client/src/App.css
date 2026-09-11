@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f7f3ff;
+}
+
+.registration-card {
+  max-width: 700px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* Common field */
+
+.field {
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+}
+
+.field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid #777;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Pastel colours */
+
+.name-field {
+  background-color: #ffe4e6;
+}
+
+.father-field {
+  background-color: #e0f2fe;
+}
+
+.mother-field {
+  background-color: #fef3c7;
+}
+
+.email-field {
+  background-color: #dcfce7;
+}
+
+.phone-field {
+  background-color: #f3e8ff;
+}
+
+.address-field {
+  background-color: #cffafe;
+}
+
+.pin-field {
+  background-color: #fce7f3;
+}
+
+.blood-field {
+  background-color: #fee2e2;
+}
+
+.gender-field {
+  background-color: #ede9fe;
+}
+
+/* Gender */
+
+.gender-options {
+  display: flex;
+  gap: 25px;
+}
+
+.gender-options label {
+  font-weight: normal;
+}
+
+.gender-options input {
+  margin-right: 6px;
+}
+
+/* Validation */
+
+.error {
+  display: block;
+  color: #dc2626;
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+.success {
+  display: block;
+  color: #16a34a;
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+/* Register button */
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #dc2626;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b91c1c;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .registration-card {
+    padding: 20px;
+  }
+
+  .gender-options {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+}
